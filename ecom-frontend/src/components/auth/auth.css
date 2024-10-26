@@ -1,0 +1,152 @@
+/* Background Blur */
+.auth-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(8px); /* Blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure the overlay is on top */
+}
+
+/* Auth Box (Popup) */
+.auth-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    z-index: 1001; /* Ensure popup is above the background */
+    position: relative; /* Relative positioning */
+}
+
+/* Close Button (optional if you want to allow closing the popup) */
+.auth-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #777;
+}
+
+.auth-close-btn:hover {
+    color: #333;
+}
+
+/* Auth Titles */
+.auth-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Form Inputs */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-input {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    transition: border-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+.auth-input:focus {
+    border-color: #a6c0fe;
+    box-shadow: 0 0 8px rgba(166, 192, 254, 0.2);
+    outline: none;
+}
+
+/* Button */
+.auth-button {
+    background-color: #5f72ff;
+    color: white;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.auth-button:hover {
+    background-color: #4b5bdc;
+}
+
+/* Switch between login/signup */
+.auth-switch {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    color: #555;
+}
+
+.auth-switch-link {
+    color: #5f72ff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.auth-switch-link:hover {
+    color: #4b5bdc;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    .auth-box {
+      padding: 30px 20px; /* Reduce padding for mobile */
+    }
+  
+    .auth-title {
+      font-size: 1.5em; /* Adjust the title size for mobile */
+    }
+  
+    .auth-subtitle {
+      font-size: 0.9em; /* Adjust subtitle size */
+      margin-bottom: 20px; /* Reduce space between subtitle and form */
+    }
+  
+    .auth-input {
+      font-size: 0.9em; /* Smaller font size for input fields */
+      padding: 10px 12px; /* Reduce padding in input fields */
+    }
+  
+    .auth-button {
+      font-size: 1em; /* Adjust button size */
+      padding: 10px; /* Smaller button padding */
+    }
+  
+    .auth-close-btn {
+      font-size: 20px; /* Smaller close button */
+    }
+  
+    .auth-switch {
+      font-size: 0.9em; /* Adjust switch link text size */
+    }
+}

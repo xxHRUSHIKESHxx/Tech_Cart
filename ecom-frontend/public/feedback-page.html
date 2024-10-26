@@ -1,0 +1,128 @@
+<!--  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #eaeff1;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        .feedback-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .feedback-item {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+
+        .feedback-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feedback-item h3 {
+            margin: 0;
+            color: #2980b9;
+            font-size: 1.2rem;
+        }
+
+        .feedback-item p {
+            margin: 10px 0 0 0;
+            color: #7f8c8d;
+        }
+
+        .feedback-item p.rating {
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        .no-feedback {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        /* Add responsiveness */
+        @media (max-width: 768px) {
+            .feedback-item {
+                padding: 15px;
+            }
+
+            .feedback-container {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Feedbacks</h1>
+
+    <div id="feedbackContainer" class="feedback-container">
+        <!-- Feedbacks will be displayed here -->
+    </div>
+
+    <script>
+        // Function to fetch feedbacks from the API and display them
+        function fetchFeedbacks() {
+            fetch('http://localhost:5000/feedbacks')
+                .then(response => response.json())
+                .then(data => {
+                    const feedbackContainer = document.getElementById('feedbackContainer');
+
+                    // Clear any existing content
+                    feedbackContainer.innerHTML = '';
+
+                    // Check if feedbacks exist
+                    if (data.length === 0) {
+                        feedbackContainer.innerHTML = '<p class="no-feedback">No feedback available.</p>';
+                    } else {
+                        // Loop through feedbacks and display them
+                        data.forEach(feedback => {
+                            const feedbackItem = document.createElement('div');
+                            feedbackItem.classList.add('feedback-item');
+
+                            feedbackItem.innerHTML = `
+                                <h3>User: ${feedback.user.username} (${feedback.user.email})</h3>
+                                <p class="rating">Rating: ${feedback.rating}/5</p>
+                                <p>Review: ${feedback.review}</p>
+                            `;
+
+                            feedbackContainer.appendChild(feedbackItem);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching feedback:', error);
+                });
+        }
+
+        // Call the function to fetch and display feedbacks when the page loads
+        window.onload = fetchFeedbacks;
+    </script>
+
+</body>
+</html>

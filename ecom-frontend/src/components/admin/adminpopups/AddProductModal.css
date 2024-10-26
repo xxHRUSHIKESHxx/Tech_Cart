@@ -1,0 +1,79 @@
+/* Modal background overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  backdrop-filter: blur(5px); /* Blur effect on the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal appears on top of other elements */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001; /* Ensure content is above the overlay */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Modal header styling */
+.modal-content h3 {
+  margin-bottom: 10px;
+}
+
+/* Input and textarea styling */
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* File input styling */
+.modal-content input[type="file"] {
+  padding: 3px;
+}
+
+/* Checkbox styling */
+.modal-content label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button styling */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-buttons button:last-child {
+  background-color: #ccc;
+  color: black;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.9;
+}

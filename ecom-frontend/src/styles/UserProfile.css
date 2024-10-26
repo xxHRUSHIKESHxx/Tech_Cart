@@ -1,0 +1,164 @@
+/* Container styling for the user profile */
+.user-profile-container {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Styling for the profile card */
+.profile-card {
+  background: #f0f0f0;
+  padding: 1.5rem; /* Reduce padding slightly */
+  border-radius: 10px;
+  width: 90%; /* Adjust to be fluid across different devices */
+  max-width: 600px; /* Slightly reduce the max-width */
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-greeting {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.profile-avatar {
+  width: 7rem; /* Slightly smaller avatar size */
+  height: 7rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-name,
+.profile-email {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.edit-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.edit-button:hover {
+  background: #0056b3;
+}
+
+/* Orders section styling */
+.orders-section {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.orders-title {
+  font-size: 1.5rem;
+}
+
+/* Table styling */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+}
+
+.orders-table td {
+  font-size: 0.9rem;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.orders-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .profile-card,
+  .orders-section {
+    width: 95%;
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .profile-avatar {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .profile-name,
+  .profile-email {
+    font-size: 1.1rem;
+  }
+
+  .edit-button {
+    padding: 0.6rem 1rem;
+  }
+
+  .orders-table th,
+  .orders-table td {
+    padding: 0.8rem;
+  }
+
+  .orders-table th {
+    font-size: 0.9rem;
+  }
+
+  .orders-table td {
+    font-size: 0.8rem;
+  }
+}
+
+/* Further adjustments for very small devices */
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 1rem;
+    width: 100%; /* Take up more width on very small screens */
+    max-width: 400px; /* Reduce max-width */
+  }
+
+  .profile-avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .profile-greeting {
+    font-size: 1.4rem;
+  }
+
+  .profile-name,
+  .profile-email {
+    font-size: 1rem;
+  }
+
+  .edit-button {
+    padding: 0.5rem 0.9rem;
+  }
+}

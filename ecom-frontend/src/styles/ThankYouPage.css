@@ -1,0 +1,68 @@
+.buy-now-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .buy-now-details {
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .buy-now-image {
+    width: 200px;
+    height: auto;
+  }
+  
+  .confirm-purchase-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-purchase-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Thank You Page Styling */
+  .thank-you-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .thank-you-tick {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .thank-you-message {
+    font-size: 2.5rem;
+    color: #4caf50;
+  }
+  
+  .thank-you-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .back-to-home-btn {
+    padding: 12px 25px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .back-to-home-btn:hover {
+    background-color: #45a049;
+  }
+  

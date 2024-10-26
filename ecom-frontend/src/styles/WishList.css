@@ -1,0 +1,114 @@
+/* Container styling */
+.wishlist-container {
+  margin-top: 3rem;
+    padding: 40px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .wishlist-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Grid Layout for Wishlist items */
+  .wishlist-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  /* Wishlist Product Card */
+  .wishlist-product-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .wishlist-product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Product Image */
+  .wishlist-product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Product Title */
+  .wishlist-product-title {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  
+  .wishlist-product-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .wishlist-product-title a:hover {
+    color: #f7941d;
+  }
+  
+  /* Product Price */
+  .wishlist-product-price {
+    font-size: 16px;
+    color: #f7941d;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  /* Remove from Wishlist Button */
+  .remove-from-wishlist-btn {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-from-wishlist-btn:hover {
+    background-color: #d93a3d;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .wishlist-container {
+      padding: 20px;
+    }
+  
+    .wishlist-product-card {
+      max-width: 100%;
+      margin: 0 10px;
+    }
+  
+    .wishlist-grid {
+      gap: 20px;
+    }
+  
+    .wishlist-container h2 {
+      font-size: 28px;
+    }
+  }
+  
+

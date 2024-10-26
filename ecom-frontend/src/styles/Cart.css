@@ -1,0 +1,115 @@
+.cart-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+.cart-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center; /* Center-aligns the grid items horizontally */
+}
+
+.cart-product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cart-product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-product-info {
+  padding: 15px 0;
+}
+
+.cart-product-title {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.cart-product-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cart-product-title a:hover {
+  color: #007bff;
+}
+
+.cart-product-price {
+  font-size: 20px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.remove-button {
+  padding: 10px 16px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.remove-button:hover {
+  background-color: #ff7875;
+  transform: translateY(-2px);
+}
+
+.remove-button:active {
+  transform: translateY(0px);
+}
+
+.buy-all-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.buy-all-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  width: 90%;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-all-button:hover {
+  background-color: #109b0b;
+}

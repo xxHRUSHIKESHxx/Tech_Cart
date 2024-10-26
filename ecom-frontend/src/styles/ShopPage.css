@@ -1,0 +1,171 @@
+/* Shop Page General Styles */
+.shop-page {
+  margin-top: 4rem; /* Adjusted margin for mobile */
+  padding: 20px; /* Reduced padding for mobile */
+  background-color: #f8f9fa;
+}
+
+/* Heading Text */
+.heading-text {
+  font-size: 28px; /* Smaller font for mobile */
+  margin-bottom: 30px; /* Less margin for mobile */
+}
+
+/* Category Container */
+.category-container {
+  display: flex;
+  gap: 10px; /* Reduced gap for mobile */
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* Category Block */
+.category-block {
+  width: 160px; /* Smaller width for mobile */
+  height: 100px; /* Smaller height for mobile */
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Lighter shadow on mobile */
+}
+
+.category-name {
+  font-size: 1.4rem; /* Smaller text size for mobile */
+  padding: 8px; /* Reduced padding */
+}
+
+/* Pagination */
+.pagination {
+  margin: 20px 0; /* Adjusted margin for mobile */
+}
+
+.prev-button,
+.next-button {
+  padding: 10px 18px; /* Smaller padding for mobile */
+  font-size: 16px; /* Adjusted font size */
+}
+
+.current-page {
+  font-size: 16px;
+  margin: 0 10px; /* Reduced spacing */
+}
+/* Responsive Styles for Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .shop-page {
+    margin-top: 2rem;
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .heading-text {
+    font-size: 24px; /* Further smaller font for smaller mobile */
+    margin-bottom: 20px;
+  }
+
+  .category-container {
+    gap: 10px; /* Ensure gap for mobile */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
+  }
+
+  .category-block {
+    width: 140px; /* Adjusted for smaller screens */
+    height: 90px;
+    border-radius: 8px;
+  }
+
+  .category-name {
+    font-size: 1.2rem; /* Smaller text to fit smaller category blocks */
+    padding: 6px;
+  }
+
+  /* Pagination buttons */
+  .prev-button,
+  .next-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .current-page {
+    font-size: 14px;
+    margin: 0 5px; /* More compact on small screens */
+  }
+}
+/* Extra small devices (up to 480px) */
+@media (max-width: 480px) {
+  .shop-page {
+    margin-top: 1.5rem;
+    padding: 10px;
+  }
+
+  .heading-text {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .category-container {
+    gap: 8px; /* Reduce gap for extra small devices */
+    justify-content: center; /* Ensure horizontal centering */
+    align-items: center; /* Ensure vertical centering */
+  }
+  .category-block {
+    width: 120px; /* Further smaller for compact devices */
+    height: 80px;
+  }
+
+  .category-name {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .prev-button,
+  .next-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .current-page {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center; /* Center the search bar */
+  margin-bottom: 50px; /* Spacing below the search bar */
+}
+
+.search-bar {
+  width: 300px; /* Width of the search bar */
+  padding: 15px 15px; /* Padding for input */
+   /* Border color */
+  border-radius: 30px; /* Fully rounded corners */
+  font-size: 16px; /* Font size for input */
+  color: #222; /* Text color */
+  outline: none; /* Remove outline */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.search-bar:focus {
+  border-color: #f67c20; /* Darker border on focus */
+}
+
+.search-button {
+  background-color: #f7941d; /* Button color */
+  color: #fff; /* Text color */
+  border: none; /* No border */
+  border-radius: 30px; /* Fully rounded corners */
+  padding: 12px 20px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button */
+  margin-left: 10px; /* Space between search input and button */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.search-button:hover {
+  background-color: #e68a00; /* Darker background on hover */
+}

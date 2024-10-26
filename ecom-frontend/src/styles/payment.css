@@ -1,0 +1,225 @@
+/* Payment Container */
+.payment-container {
+    margin-top: 5rem;
+    padding: 40px;
+    background-color: #f4f4f4; /* Slightly darker background for contrast */
+    border-radius: 12px; /* Increased rounding for a modern look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for more depth */
+    max-width: 700px; /* Increased width for a spacious layout */
+    margin: auto; /* Center the container */
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+/* Payment Title */
+.payment-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222; /* Darker text for better contrast */
+    text-align: center; /* Center title */
+    margin-bottom: 30px; /* More space below the title */
+}
+
+/* Customer Details Section */
+.customer-details {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Softer shadow */
+}
+
+.customer-details input {
+    display: block;
+    margin: 15px 0;
+    padding: 14px;
+    width: 100%;
+    border: 1px solid #ccc; /* More neutral border color */
+    border-radius: 8px; /* Softer rounding for inputs */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.customer-details input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Glowing effect on focus */
+}
+
+/* Product Item Styling */
+.product-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.product-item h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.product-item span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.quantity-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Total Amount */
+.total-amount {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.total-amount h3 {
+    font-size: 22px;
+    color: #555;
+}
+
+/* Transaction ID Section */
+.transaction-id {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.transaction-id input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+/* Buy Now Button */
+.buy-now-button {
+    display: block;
+    margin: 30px auto;
+    padding: 14px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745; /* Green color for call-to-action */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease; /* Smooth transition */
+}
+
+.buy-now-button:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Error Message */
+.error-message {
+    color: #dc3545; /* Red color for errors */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Payment Method Dropdown */
+.payment-method-select {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.payment-method-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* QR Code Section */
+.qr-code {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.payment-methods {
+    margin: 25px 0;
+}
+
+.payment-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.payment-logo {
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.payment-logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+/* Customer Details Section (For Payment Method & Address) */
+.form-group {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically center label and input */
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+.form-group label {
+    width: 150px; /* Fixed width for labels */
+    font-size: 16px; /* Adjust label font size */
+    color: #333; /* Darker color for labels */
+}
+
+.form-group input, 
+.form-group select {
+    flex-grow: 1; /* Allow input/field to take up remaining space */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column; /* Stack label and input vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%; /* Make label full width on small screens */
+        margin-bottom: 10px; /* Space between label and input */
+    }
+
+    .form-group input, 
+    .form-group select {
+        width: 100%; /* Make input/select full width on small screens */
+    }
+}

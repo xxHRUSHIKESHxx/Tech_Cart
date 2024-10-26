@@ -1,0 +1,25 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into the next row */
+    justify-content: flex-start; /* Center the items horizontally */
+    gap: 5rem; /* Add space between the product cards */
+    padding: 20px 40px; /* Add padding around the product list */
+  }
+  
+  .product-card {
+    flex: 1 1 250px; /* Flex-basis is 250px, allowing the card to grow/shrink */
+    max-width: 300px; /* Set a max-width for better control */
+    margin: 0 auto; /* Center cards when there’s extra space */
+  }
+  
+  @media (max-width: 768px) {
+    .product-list {
+      gap: 20px; /* Reduce gap for smaller screens */
+      padding: 10px 20px;
+    }
+  
+    .product-card {
+      flex: 1 1 200px; /* Make product cards smaller on mobile */
+    }
+  }
+  

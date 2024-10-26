@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "MacBook Pro 16",
+      "price": 2399.00,
+      "image": "https://images.pexels.com/photos/18104/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600",
+      "category": "laptop",
+      "description": "The MacBook Pro 16 is a high-performance laptop with a stunning Retina display, powerful M1 Pro chip, and long battery life, perfect for professionals.",
+      "stock": 9
+    },
+    {
+      "id": 2,
+      "name": "Dell XPS 13",
+      "price": 1299.00,
+      "image": "https://images.pexels.com/photos/18104/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600",
+      "category": "laptop",
+      "description": "Dell XPS 13 is a sleek and compact laptop featuring a 13.4-inch display, Intel Core i7 processor, and a slim, portable design ideal for on-the-go productivity.",
+      "stock": 25
+    },
+    {
+      "id": 3,
+      "name": "iPhone 14",
+      "price": 999.00,
+      "image": "https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "mobile",
+      "description": "iPhone 14 offers advanced features like a 6.1-inch Super Retina XDR display, A15 Bionic chip, 5G connectivity, and an improved dual-camera system.",
+      "stock": 50
+    },
+    {
+      "id": 4,
+      "name": "Samsung Galaxy S23",
+      "price": 799.00,
+      "image": "https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "mobile",
+      "description": "Samsung Galaxy S23 features a 6.1-inch Dynamic AMOLED 2X display, Snapdragon 8 Gen 2 processor, and a triple-camera setup for stunning photos and videos.",
+      "stock": 40
+    },
+    {
+      "id": 5,
+      "name": "Sony WH-1000XM4",
+      "price": 349.00,
+      "image": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "headphones",
+      "description": "Sony WH-1000XM4 are industry-leading noise-canceling headphones with exceptional sound quality, 30-hour battery life, and touch sensor controls.",
+      "stock": 75
+    },
+    {
+      "id": 6,
+      "name": "Bose QuietComfort 45",
+      "price": 329.00,
+      "image": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "headphones",
+      "description": "Bose QuietComfort 45 headphones provide world-class noise cancellation, excellent comfort, and up to 24 hours of battery life for long listening sessions.",
+      "stock": 60
+    }
+  ]
+}

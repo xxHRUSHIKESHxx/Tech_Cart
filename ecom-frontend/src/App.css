@@ -1,0 +1,6 @@
+/* landingpage.css */
+/* Anupam changed: Increased z-index for toast notifications */
+.Toastify__toast-container {
+    z-index: 9999;
+  }
+  
